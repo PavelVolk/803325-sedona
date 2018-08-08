@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Волков](https://up.htmlacademy.ru/htmlcss/22/user/803325).
-* Наставник: Георгий Гусаков.
+* Наставник: [Георгий Гусаков](https://htmlacademy.ru/profile/georgegus27).
 
 ---
 
