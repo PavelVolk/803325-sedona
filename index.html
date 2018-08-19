@@ -92,11 +92,35 @@
   		<section class="feedback">
   			<p class="feedback-highlight">Заинтересовались?</p>
   			<p class="feedback-specification">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  			<button type="button" class="feedback-btn btn">Поиск гостиницы в Седоне</button>
-  			<!-- Здесь будет форма -->
-  			<div class="map">
-  			<!-- Здесь будет Интерактивная карта -->
-  			</div>
+  				
+				<p class="search-link">
+						<a class="search-link" href="search.html">Поиск гостиницы в Седоне</a>
+				</p>
+				<form class="search" action="" method="post">
+					<p>
+						<label for="arrival"><span>Дата заезда</span></label>
+						<input type="text" class="date-arrival" id="arrival">
+					</p>
+					<p>
+						<label for="leaving"><span>Дата выезда</span></label>
+						<input type="text" class="date-leaving" id="leaving">
+					</p>
+					<p>
+						<label for="adults"><span>Взрослые</span></label>
+						<input type="text"id="adults" name="number-of-adults" pattern="\d [0-9]">
+					</p>
+					<p>
+						<label for="children"><span>Дети</span></label>
+						<input type="text" id="children" name="number-of-children" pattern="\d [0-9]">
+					</p>
+					<button class="search-send" type="submit">Найти</button>
+				</form>
+  			
+  		<section class="map">
+  			<h2 class="visually-hidden">Местонахождение города Седона</h2>
+  			<p>
+  				<img src="img/content/map.jpg" width="1200" height="594" alt="Карта штата Аризона. Город Седона">
+  			</p>
   		</section>
   	</main>
   	<footer class="container main-footer">	

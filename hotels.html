@@ -23,34 +23,65 @@
     <main class="container">
       <section class="filter">
         <h2 class="visually-hidden">Критерии выбора жилья</h2>
-        <div class="filter-col">
-          <span class="filter-text">Инфраструктура:</span>
-          <input type="checkbox" class="filter-check" id="pool">
-          <label class="filter-name" for="pool">Бассейн</label>
 
-          <input type="checkbox" class="filter-check" id="parking">
-          <label class="filter-name" for="parking">Парковка</label>
+        <form class="filter" method="get" action="">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <div class="filter-col">
+              <ul>
+                <li>
+                  <input type="checkbox" class="filter-check" id="pool">
+                  <label class="filter-name" for="pool"><span class="filter-text">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="filter-check" id="parking">
+                  <label class="filter-name" for="parking"><span class="filter-text">Парковка</label>                  
+                </li>
+                <li>
+                  <input type="checkbox" class="filter-check" id="net">
+                  <label class="filter-name" for="net"><span class="filter-text">Wi-fi</label>                  
+                </li>
+              </ul>
+            </div>            
+          </fieldset>
 
-          <input type="checkbox" class="filter-check" id="net">
-          <label class="filter-name" for="net">Wi-fi</label>
-        </div>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <div class="filter-col">
+              <ul>
+                <li>
+                  <input type="checkbox" class="filter-check" id="hotel">
+                  <label class="filter-name" for="hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="filter-check" id="motel">
+                  <label class="filter-name" for="motel">Мотель</label>                
+                </li>
+                <li>
+                  <input type="checkbox" class="filter-check" id="apartments">
+                  <label class="filter-name" for="apartments">Апартаменты</label>               
+                </li>
+              </ul>
+            </div>         
+          </fieldset>
 
-        <div class="filter-col">
-          <span class="filter-text">Тип жилья:</span>
-          <input type="checkbox" class="filter-check" id="hotel">
-          <label class="filter-name" for="hotel">Гостиница</label>
+          <fieldset>
+            <legend>Стоимость в сутки</legend>          
+            <div class="filter-col filter-slider">
+              <label>
+                <input type="text" name="cost">
+                <span class="slider-text">От</span>
+              </label>
 
-          <input type="checkbox" class="filter-check" id="motel">
-          <label class="filter-name" for="motel">Мотель</label>
+              <label>
+                <input type="text" name="cost">
+                <span class="slider-text">До</span>
+              </label>
+            </div>  
+          </fieldset> 
+          <input type="submit" class="filter-show-btn" value="Показать">  
+        </form>
 
-          <input type="checkbox" class="filter-check" id="apartments">
-          <label class="filter-name" for="apartments">Апартаменты</label>
-        </div>
-          <div class="filter-col filter-slider">
-            <p class="filter-text">Стоимость в сутки (Р):</p>
-            <!-- здесь будет форма -->
-          </div>
-          <input type="submit" class="filter-show-btn" value="Показать">
       </section>
 
       <section class="sort">
@@ -87,7 +118,7 @@
               </div>
               <div class="hotel-block">
                 <span class="hotel-text">От 4000 р.</span>
-                <a href="#" class="hotel-booking-btn">Забронировать</a>
+                <input type="button" href="#" class="hotel-booking-btn" value="Забронировать">
               </div>
           </div>
           <div class="hotel-rate">
@@ -108,7 +139,7 @@
               </div>
               <div class="hotel-block">
                 <span class="hotel-text">От 3000 р.</span>
-                <a href="#" class="hotel-booking-btn">Забронировать</a>
+                <input type="button" href="#" class="hotel-booking-btn" value="Забронировать">
               </div>
           </div>
           <div class="hotel-rate">
@@ -129,7 +160,7 @@
               </div>
               <div class="hotel-block">
                 <span class="hotel-text">От 2000 р.</span>
-                <a href="#" class="hotel-booking-btn">Забронировать</a>
+                <input type="button" href="#" class="hotel-booking-btn" value="Забронировать">
               </div>
           </div>
           <div class="hotel-rate">
