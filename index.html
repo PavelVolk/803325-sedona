@@ -100,18 +100,24 @@
 					<p>
 						<label for="arrival"><span>Дата заезда</span></label>
 						<input type="text" class="date-arrival" id="arrival">
+						<button type="button" class="search-calendar"></button>
 					</p>
 					<p>
 						<label for="leaving"><span>Дата выезда</span></label>
 						<input type="text" class="date-leaving" id="leaving">
+						<button type="button" class="search-calendar"></button>
 					</p>
 					<p>
 						<label for="adults"><span>Взрослые</span></label>
+						<button class="number-btn number-btn-minus">Минус</button>
 						<input type="text"id="adults" name="number-of-adults" pattern="\d [0-9]">
+						<button class="number-btn number-btn-plus">Плюс</button>
 					</p>
 					<p>
 						<label for="children"><span>Дети</span></label>
+						<button class="number-btn number-btn-minus">Минус</button>
 						<input type="text" id="children" name="number-of-children" pattern="\d [0-9]">
+						<button class="number-btn number-btn-plus">Плюс</button>
 					</p>
 					<button class="search-send" type="submit">Найти</button>
 				</form>
