@@ -24,7 +24,7 @@
       <section class="filter">
         <h2 class="visually-hidden">Критерии выбора жилья</h2>
 
-        <form class="filter" method="get" action="">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <div class="filter-col">
@@ -81,17 +81,21 @@
             <legend>Стоимость в сутки</legend>          
             <div class="filter-col filter-slider">
               <label>
-                <input type="text" name="cost">
                 <span class="slider-text">От</span>
+                <input class="cost min-cost" type="text">
               </label>
-
               <label>
-                <input type="text" name="cost">
                 <span class="slider-text">До</span>
+                <input class="cost max-cost" type="text">
               </label>
+              <div class="range-controls">
+                <div class="scale"></div>
+                <div class="grip min-grip"></div>
+                <div class="grip max-grip"></div>
+              </div>
             </div>  
           </fieldset> 
-          <input type="submit" class="filter-show-btn" value="Показать">  
+          <button type="submit" class="filter-show-btn" value="Показать">  
         </form>
 
       </section>
@@ -130,7 +134,7 @@
               </div>
               <div class="hotel-block">
                 <span class="hotel-text">От 4000 р.</span>
-                <input type="button" href="#" class="hotel-booking-btn" value="Забронировать">
+                <a href="#" class="hotel-booking-btn">Забронировать</a>
               </div>
           </div>
           <div class="hotel-rate">
@@ -151,7 +155,7 @@
               </div>
               <div class="hotel-block">
                 <span class="hotel-text">От 3000 р.</span>
-                <input type="button" href="#" class="hotel-booking-btn" value="Забронировать">
+                <a href="#" class="hotel-booking-btn">Забронировать</a>
               </div>
           </div>
           <div class="hotel-rate">
@@ -172,7 +176,7 @@
               </div>
               <div class="hotel-block">
                 <span class="hotel-text">От 2000 р.</span>
-                <input type="button" href="#" class="hotel-booking-btn" value="Забронировать">
+                <a href="#" class="hotel-booking-btn">Забронировать</a>
               </div>
           </div>
           <div class="hotel-rate">

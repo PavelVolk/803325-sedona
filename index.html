@@ -92,49 +92,48 @@
   		<section class="feedback">
   			<p class="feedback-highlight">Заинтересовались?</p>
   			<p class="feedback-specification">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  				
-				<p class="search-link">
-						<a class="search-link" href="search.html">Поиск гостиницы в Седоне</a>
-				</p>
-				<form class="search" action="" method="post">
-					<p>
-						<label class="search-item">
-							<span>Дата заезда</span>
-							<input type="text" class="date-arrival">
-							<button type="button" class="search-calendar"></button>
-						</label>
-					</p>
-					<p>
-						<label class="search-item">
-							<span class="search-text">Дата выезда</span>
-							<input type="text" class="date-leaving">						
-							<button type="button" class="search-calendar"></button>
-						</label>
-					</p>
-					<p>
-						<label class="search-item">
-							<span class="search-text">Взрослые</span>
-							<button class="number-btn number-btn-minus">Минус</button>
-							<input type="text" name="number-of-adults" pattern="\d [0-9]">
-							<button class="number-btn number-btn-plus">Плюс</button>
-						</label>
-					</p>
-					<p>
-						<label class="search-item">
-							<span class="search-text">Дети</span>
-							<button class="number-btn number-btn-minus">Минус</button>
-							<input type="text" name="number-of-children" pattern="\d [0-9]">
-							<button class="number-btn number-btn-plus">Плюс</button>
-						</label>
-					</p>
-					<button class="search-send" type="submit">Найти</button>
-				</form>
-  			
+				<div class="search">
+					<div class="modal-search">
+							<a class="search-link" href="search.html">Поиск гостиницы в Седоне</a>
+					</div>
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+						<p>
+							<label class="search-item">
+								<span class="search-text">Дата заезда</span>
+								<input type="text" class="residence-time" name="date-arrival">
+								<button type="button" class="search-calendar"></button>
+							</label>
+						</p>
+						<p>
+							<label class="search-item">
+								<span class="search-text">Дата выезда</span>
+								<input type="text" class="residence-time" name="date-leaving">						
+								<button type="button" class="search-calendar"></button>
+							</label>
+						</p>
+						<p>
+							<label class="search-item">
+								<span class="search-text">Взрослые</span>
+								<button class="number-btn number-btn-minus">Минус</button>
+								<input type="text" class="person-number" name="number-of-adults" pattern="\d [0-9]">
+								<button class="number-btn number-btn-plus">Плюс</button>
+							</label>
+						</p>
+						<p>
+							<label class="search-item">
+								<span class="search-text">Дети</span>
+								<button class="number-btn number-btn-minus half-width">Минус</button>
+								<input type="text" class="person-number" name="number-of-children" pattern="\d [0-9]">
+								<button class="number-btn number-btn-plus half-width">Плюс</button>
+							</label>
+						</p>
+						<button class="search-send" type="submit">Найти</button>
+					</form>
+				</div>
+  		</section>
   		<section class="map">
   			<h2 class="visually-hidden">Местонахождение города Седона</h2>
-  			<p>
-  				<img src="img/content/map.jpg" width="1200" height="594" alt="Карта штата Аризона. Город Седона">
-  			</p>
+  			<img src="img/content/map.jpg" width="1200" height="594" alt="Карта штата Аризона. Город Седона">
   		</section>
   	</main>
   	<footer class="container main-footer">	
