@@ -97,7 +97,7 @@
 							<a class="search-link" href="search.html">Поиск гостиницы в Седоне</a>
 					</div>
 					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-						<p class="search-box">
+						<p class="search-row">
 							<label class="search-item">
 								<span class="search-text">Дата заезда</span>
 								<input type="text" class="residence-time" name="date-arrival">
@@ -108,7 +108,7 @@
 								</button>
 							</label>
 						</p>
-						<p class="search-box">
+						<p class="search-row">
 							<label class="search-item">
 								<span class="search-text">Дата выезда</span>
 								<input type="text" class="residence-time" name="date-leaving">						
@@ -119,22 +119,20 @@
 								</button>
 							</label>
 						</p>
-						<p class="search-box">
+						<p class="search-row">
 							<label class="search-item">
-								<h4 class="visually-hidden">Количество мест</h4>
 								<span class="search-text">Взрослые</span>
-								<button class="number-btn number-btn-minus"><span class="visualy-hidden"> Меньше</span></button>
-								<input type="text" class="person-number" name="number-of-adults" pattern="[0-9]{1}">
-								<button class="number-btn number-btn-plus"><span class="visualy-hidden"> Больше</span></button>
+								<button class="number-btn number-btn-minus">Меньше</button>
+								<input type="text" class="person-number" name="number-of-adults" pattern="[0-9]{1,2}">
+								<button class="number-btn number-btn-plus">Больше</button>
 							</label>
 						</p>
-						<p class="search-box">
+						<p class="search-row">
 							<label class="search-item">
-								<h4 class="visually-hidden">Количество мест</h4>
 								<span class="search-text">Дети</span>
-								<button class="number-btn number-btn-minus half-width"><span class="visualy-hidden"> Меньше</span></button>
-								<input type="text" class="person-number" name="number-of-children" pattern="[0-9]{1}">
-								<button class="number-btn number-btn-plus half-width"><span class="visualy-hidden"> Больше</span></button>
+								<button class="number-btn number-btn-minus half-width">Меньше</button>
+								<input type="text" class="person-number" name="number-of-children" pattern="[0-9]{1,2}">
+								<button class="number-btn number-btn-plus half-width">Больше</button>
 							</label>
 						</p>
 						<button class="search-send" type="submit">Найти</button>
