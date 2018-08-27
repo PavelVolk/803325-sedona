@@ -16,43 +16,60 @@ a {
 	text-decoration: none;
 }
 
-.menu {
-}
-
 .menu-list {
 	list-style: none;
 }
 
-.menu-list a {
+.menu-link {
 	color: #000000;
 }
 
-.menu-list a:hover{
+.menu-link:hover {
 	color: #81b3d2;
 
 }
-.menu-list a:focus {
-	color: #0000004c;
+.menu-link:focus {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-link:not([href]){
+  color: #766357;
+}
+
+.reason-greeting {
+  background-color: #B0E0E6;
+  background-image: url("../img/bg/main-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .reason-header {
-	text-align: center;
-	
-	background-color: ;
-	background-image: url("img/bg/main-bg.jpg");
-	background-position: top center;
-	background-repeat: no-repeat;
-
+  text-align: center;
 }
 
-.reason-header .reason-highlight {
+.reason-header .reason-title {
 	font-size: 21px;
 	line-height: 26px;
 }
 
-.reason-header p {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: 400;
+.theme-text {
+  font-weight: 400;
+  color: #333333;
+}
+
+.reason-header .theme-text {
 	color: #333333;
+}
+
+.reason {
+  text-align: center;
+  line-height: 21px;
+}
+.theme-title{
+  font-size: 21px;
+}
+
+.reason-extended .reason-content{
+  color: #ffffff;
+  background-color: #81b3d2;
 }
