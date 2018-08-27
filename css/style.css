@@ -16,8 +16,45 @@ a {
 	text-decoration: none;
 }
 
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+
+.modal-search .button:hover {
+  background-color: #604e43;
+}
+
+.modal-search .button:active {
+  background-color: #503e33;
+}
+
+.theme-text{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+
+.theme-title{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
 .menu-list {
 	list-style: none;
+  text-align: center;
 }
 
 .menu-link {
@@ -28,46 +65,34 @@ a {
 	color: #81b3d2;
 
 }
-.menu-link:focus {
-	color: rgba(0, 0, 0, 0.3);
+.menu-link:active {
+	opacity: 0.3;
 }
 
 .menu-link:not([href]){
   color: #766357;
 }
 
+.reason{
+  text-align: center;
+}
+
 .reason-greeting {
-  background-color: #B0E0E6;
+  background-color: #b0e0e6;
   background-image: url("../img/bg/main-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.reason-header {
-  text-align: center;
-}
-
 .reason-header .reason-title {
-	font-size: 21px;
 	line-height: 26px;
 }
 
-.theme-text,
-.reason-number {
-  font-weight: 400;
-  color: #333333;
+.reason-header .theme-text {
+  line-height: 26px;
 }
 
-.theme-title{
-  font-size: 21px;
-}
-
-.reason-item {
-  text-align: center;
-  line-height: 21px;
-}
-
-.reason-extended .reason-content {
+.reason-content {
   background-color: #81b3d2;
 }
 
@@ -77,4 +102,71 @@ a {
   color: #ffffff;
 }
 
+.reason-number {
+  font-weight: 400;
+}
 
+.less-content {
+  background-color: #eeeeee;
+}
+
+.feedback .theme-title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.feedback .theme-text {
+  line-height: 24px;
+}
+
+.search-item input {
+  font: inherit;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-item input:hover {
+  background-color: #ebebeb;
+  border: none;
+}
+
+.search-item input:focus {
+  background-color: #ffffff;
+  border: solid 2px #e5e5e5;
+}
+
+.search-send {
+  background-color: #81b3d2;
+}
+
+.search-send:hover {
+  background-color: #669ec0;
+}
+
+.search-send:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+  text-align: center;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer .button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.main-footer .button:hover {
+  background-color: #669ec0;
+}
+
+.main-footer .button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
