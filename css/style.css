@@ -52,24 +52,29 @@ a {
 	line-height: 26px;
 }
 
-.theme-text {
+.theme-text,
+.reason-number {
   font-weight: 400;
   color: #333333;
 }
 
-.reason-header .theme-text {
-	color: #333333;
-}
-
-.reason {
-  text-align: center;
-  line-height: 21px;
-}
 .theme-title{
   font-size: 21px;
 }
 
-.reason-extended .reason-content{
-  color: #ffffff;
+.reason-item {
+  text-align: center;
+  line-height: 21px;
+}
+
+.reason-extended .reason-content {
   background-color: #81b3d2;
 }
+
+.reason-extended .theme-text,
+.reason-extended .theme-title,
+.reason-extended .reason-number{
+  color: #ffffff;
+}
+
+
