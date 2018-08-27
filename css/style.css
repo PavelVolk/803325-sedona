@@ -110,6 +110,14 @@ a {
   background-color: #eeeeee;
 }
 
+.reason ol {
+  list-style: none;
+}
+
+.feature ul {
+  list-style: none;
+}
+
 .feedback .theme-title {
   font-size: 30px;
   line-height: 36px;
