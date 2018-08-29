@@ -263,6 +263,17 @@ a {
   line-height: 17.5px;
 }
 
+.filter-show-btn{
+  background-color: transparent;
+  border: solid 2px #ffffff;
+}
+
+.filter-show-btn:hover{
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 2px #ffffff;
+}
+
 .sort .sort-result {
   font-size: 21px;
   font-weight: 700;
@@ -270,18 +281,22 @@ a {
 
 .sort-item .active {
   color: #81b3d2;
+  border: none;
 }
 
 .sort-link {
   color: rgba(0, 0, 0, 0.3);
+  border-bottom: dotted 1px #81b3d2;
 }
 
 .sort-link:hover {
   color: #81b3d2;
+   border-bottom: dotted 1px #81b3d2;
 }
 
 .sort-link:active {
   color: #000000;
+  border: none;
 }
 
 .sort-icon .sort-link-step {
@@ -342,4 +357,12 @@ a {
 .hotel-details-btn:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-rate-text {
+  color: #666666;
+  text-align: center;
+  line-height: 21px;
+
+  background-color: #f2f2f2;
 }
