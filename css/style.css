@@ -113,7 +113,8 @@ a {
 .feature-list,
 .menu-list,
 .footer-list,
-.sort-list{
+.sort-list,
+.filter-list{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -234,7 +235,9 @@ a {
 }
 
 .main-footer .button {
+  font-size: 0px;
   color: #ffffff;
+
   background-color: #81b3d2;
 }
 
@@ -290,6 +293,8 @@ a {
 }
 
 .range-input {
+  color: #ffffff;
+
   background-color: transparent;
   border: none;
 }
@@ -308,17 +313,11 @@ a {
 .filter-show-btn:hover{
   color: #000000;
   background-color: #ffffff;
-  border: solid 2px #ffffff;
 }
 
 .sort .sort-result {
   font-size: 21px;
   font-weight: 700;
-}
-
-.sort-item .active {
-  color: #81b3d2;
-  border: none;
 }
 
 .sort-link {
@@ -333,6 +332,21 @@ a {
 
 .sort-link:active {
   color: #000000;
+  border: none;
+}
+
+.sort-link.active {
+  color: #81b3d2;
+  border: none;
+}
+
+.sort-link.active:hover {
+  color: #81b3d2;
+  border: none;
+}
+
+.sort-link.active:active {
+  color: #81b3d2;
   border: none;
 }
 
