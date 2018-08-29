@@ -27,7 +27,7 @@
       <section class="filter">
         <h2 class="visually-hidden">Критерии выбора жилья</h2>
         <div class="hotels-bakground">
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-col">
               <legend>Инфраструктура:</legend>
                 <ul class="filter-list">
@@ -76,15 +76,15 @@
                 </ul>
             </fieldset>
 
-            <fieldset class="filter-col filter-slider">
+            <fieldset class="filter-col filter-range">
               <legend>Стоимость в сутки (р):</legend>
-                <label>
-                  <span class="slider-text">От</span>
-                  <input type="text" class="cost" name="cost-from">
+                <label class="filter-name range-name">
+                  <span class="filter-text range-text">От</span>
+                  <input type="text" class="range-input" name="cost-from">
                 </label>
-                <label>
-                  <span class="slider-text">До</span>
-                  <input type="text" class="cost" name="cost-to">
+                <label class="filter-name range-name">
+                  <span class="filter-text range-text">До</span>
+                  <input type="text" class="range-input" name="cost-to">
                 </label>
                 <div class="range-controls">
                   <div class="bar"></div>
