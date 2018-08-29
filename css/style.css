@@ -16,6 +16,10 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+  opacity: 0;
+}
+
 .button {
   font-size: 14px;
   line-height: 21px;
@@ -124,6 +128,23 @@ a {
   line-height: 24px;
 }
 
+.search-calendar {
+  border: none;
+  background-color: transparent;
+}
+
+.inline-calendar {
+  fill: #cacaca;
+}
+
+.inline-calendar:hover {
+  fill: #000000;
+}
+
+.inline-calendar:active {
+  fill: #81b3d2;
+}
+
 .search-form {
   font-weight: 700;
 
@@ -188,6 +209,18 @@ a {
   background-color: #f2f2f2;
 }
 
+.number .number-btn {
+  font-size: 0px;
+
+  border: none;
+  background-color: transparent;
+}
+
+.number .person-number {
+  border: none;
+  background-color: transparent;
+}
+
 .map {
   background-color: #dbe5c6;
 }
@@ -212,6 +245,10 @@ a {
 .main-footer .button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+}
+
+.footer-copyright-logo {
+  font-size: 0px;
 }
 
 .inline-logo {
@@ -300,6 +337,7 @@ a {
 }
 
 .sort-icon .sort-link-step {
+  font-size: 0px;
   color: #cacaca;
 }
 
@@ -365,4 +403,8 @@ a {
   line-height: 21px;
 
   background-color: #f2f2f2;
+}
+
+.hotel-stars {
+  font-size: 0px;
 }
