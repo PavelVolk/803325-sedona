@@ -111,11 +111,12 @@ a {
 
 .reason-greeting {
   width: 100%;
-  height: 600px;
+  height: 500px;
+  background:
+  url("../img/svg/bg/welcome.svg") no-repeat center top,
+  url("../img/svg/bg/polygon.svg") no-repeat center bottom,
+  url("../img/bg/main-bg.jpg") no-repeat center center;
   background-color: #b0e0e6;
-  background-image: url("../img/bg/main-bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 .reason-header .theme-title {
