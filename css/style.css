@@ -142,7 +142,7 @@ a {
   font-weight: 400;
 }
 
-.less-content {
+.reason-less {
   background-color: #eeeeee;
 }
 
@@ -171,31 +171,18 @@ a {
 }
 
 .reason-item {
-  width: 100%
+  width: calc(100% / 3);
 }
 
-.reason-list:nth-child(1) {
+.reason-extended {
+  width: 100%;
+}
+
+.reason-list:first-child {
   order: -2;
-  width: 100%
 }
 
-.reason-list:nth-child(2) {
-
-}
-
-.reason-list:nth-child(3) {
-
-}
-
-.reason-list:nth-child(4) {
-
-}
-
-.reason-list:nth-child(5) {
-
-}
-
-.reason-list:nth-child(6) {
+.reason-list:last-child {
   order: -1;
 }
 
