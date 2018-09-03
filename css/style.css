@@ -77,13 +77,13 @@ a {
 .menu-item {
   text-align: center;
 
-  width: calc(20%);
+  width: (20%);
   box-sizing: border-box;
   flex-shrink: 0;
 }
 
 .menu-item:nth-child(2n+2) {
-  margin-right: calc(20%);
+  margin-right:(20%);
 }
 
 .menu-link {
@@ -113,9 +113,10 @@ a {
   width: 100%;
   height: 500px;
   background:
-  url("../img/svg/bg/welcome.svg") no-repeat center top,
+  url("../img/svg/bg/welcome.svg") no-repeat center center,
   url("../img/svg/bg/polygon.svg") no-repeat center bottom,
   url("../img/bg/main-bg.jpg") no-repeat center center;
+  background-size: 459px 353px, auto 60px, auto;
   background-color: #b0e0e6;
 }
 
@@ -195,7 +196,7 @@ a {
 
 /*----КОНЕЦ ФЛЕКСА----*/
 
-.reason-extended .reason-content{
+.reason-extended .reason-content {
   width: calc(100%/3)
 }
 
