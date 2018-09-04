@@ -71,6 +71,7 @@ a {
   width: 100%;
   display: flex;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -129,6 +130,8 @@ a {
 }
 
 .reason-content {
+  flex-shrink: 0;
+
   background-color: #81b3d2;
 }
 
@@ -146,8 +149,6 @@ a {
   background-color: #eeeeee;
 }
 
-.feature-list,
-.menu-list,
 .footer-list,
 .sort-list,
 .filter-list {
@@ -163,7 +164,7 @@ a {
   width: 100%;
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   flex-wrap: wrap;
   flex-direction: row;
@@ -175,25 +176,63 @@ a {
 }
 
 .reason-extended {
+  display: flex;
   width: 100%;
 }
 
-.reason-list:first-child {
+.reason-item:first-child {
   order: -2;
 }
 
-.reason-list:last-child {
+.reason-item:last-child {
+  width: 100%;
   order: -1;
 }
 
 .reason-content {
+  flex-shrink: 0;
+  padding: 45px;
   width: calc(100% / 3);
+  background-color: #81b3d2;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .reason-image {
+  position: relative;
   flex-grow: 1;
+  overflow: hidden;
+  background-color: #b0e0e6;
 }
 
+.reason-image img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.feature-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.feature-item {
+  padding-top: 50px;
+}
+
+.feature-home .gift-image {
+  background: url("../img/svg/bg/home.svg") no-repeat center center;
+  background-size: 75px 72px;
+
+}
 /*----КОНЕЦ ФЛЕКСА----*/
 
 .feedback .theme-title {
