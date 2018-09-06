@@ -76,6 +76,7 @@ a {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .menu-list {
@@ -234,21 +235,18 @@ a {
 
 .reason-item:nth-child(3) .theme-text {
   max-width: 208px;
-  min-width: 182px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .reason-item:nth-child(4) .theme-text {
   max-width: 262px;
-  min-width: 152px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .reason-item:nth-child(5) .theme-text {
   max-width: 247px;
-  min-width: 145px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -290,7 +288,7 @@ a {
 }
 
 .feature-item {
-  padding-top: 50px;
+  padding:;
 }
 
 .feature-home .gift-image {
@@ -516,6 +514,10 @@ a {
 .filter-form {
   color: #ffffff;
   text-align: left;
+  line-height: 21px;
+
+  display: flex;
+  padding: 30px 72px;
 
   background-image: url("../img/bg/filter-bg.jpg");
   background-color: #637b90;
@@ -523,32 +525,179 @@ a {
   background-repeat: no-repeat;
 }
 
+.filter-col {
+  font-size: 16px;
+
+  min-width: 140px;
+  margin: 0;
+  margin-right: 110px;
+  padding: 0;
+  border: none;
+}
+
+.filter-range {
+  width: 330px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.cost {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+
+  font-size: 0;
+}
+
+.cost::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #fffff;
+  transform: translate(-50%, -50%);
+}
+
+.cost .range-name {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.cost .cost-from,
+.cost .cost-to {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.filter-text {
+  font-size: 14px;
+}
+
 .range-input {
+  width: 50px;
+  margin: 0;
+
   color: #ffffff;
 
   background-color: transparent;
   border: none;
 }
 
-.sort {
-  text-align: left;
-  font-size: 10.5px;
-  line-height: 17.5px;
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.grip {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.grip:hover {
+  background: #1c4f80;
+}
+
+.min-grip {
+  left: 0;
+}
+
+.max-grip {
+  left: 80%;
 }
 
 .filter-show-btn {
-  background-color: transparent;
-  border: solid 2px #ffffff;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .filter-show-btn:hover {
   color: #000000;
-  background-color: #ffffff;
+
+  background: #ffffff;
+}
+
+.sort {
+  text-align: left;
+  font-size: 10.5px;
+  line-height: 17.5px;
+
+  display: flex;
+  padding: 32px 72px;
+  align-items: center;
+}
+
+.sort-text {
+  margin: 0;
+}
+
+.sort-list {
+  display: flex;
+  align-items: center;
+}
+
+.sort-icon {
+  margin-left: auto;
 }
 
 .sort .sort-result {
   font-size: 21px;
   font-weight: 700;
+
+  margin-right: 50px;
+}
+
+.sort .sort-row {
+  margin-right: 40px;
+}
+
+.sort-row {
+  margin-right: 33px;
 }
 
 .sort-link {
@@ -578,7 +727,35 @@ a {
   color: #cacaca;
 }
 
-.sort-icon .sort-descending {
+.sort-icon {
+  margin-left: auto;
+}
+
+.sort-ascending {
+  position: relative;
+}
+
+.sort-descending {
+  position: relative;
+}
+
+.sort-ascending::after {
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #cacaca;
+  right: 2px;
+  bottom: 2px;
+}
+
+.sort-descending::after {
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid black;
+  right: 2px;
+  bottom: 2px;
+}
+
+/*.sort-icon .sort-descending {
   color: #81b3d2;
 }
 
@@ -588,9 +765,32 @@ a {
 
 .sort-icon .sort-link-step:active {
   color: #81b3d2;
+}*/
+
+.hotel {
+  display: flex;
+  padding: 50px;
 }
 
-.hotel-picture {
+.hotel-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-rate {
+  margin-left: auto;
+}
+
+.hotel-rate-text {
+  margin-top: auto;
+}
+
+.hotel-picture img {
   background-color: #637b90;
 }
 

@@ -78,38 +78,42 @@
 
             <fieldset class="filter-col filter-range">
               <legend>Стоимость в сутки (р):</legend>
-                <label class="filter-name range-name">
-                  <span class="filter-text range-text">От</span>
-                  <input type="text" class="range-input" name="cost-from" value="0">
-                </label>
-                <label class="filter-name range-name">
-                  <span class="filter-text range-text">До</span>
-                  <input type="text" class="range-input" name="cost-to" value="3000">
-                </label>
+                <div class="cost">
+                  <label class="filter-name range-name cost-from">
+                    <span class="filter-text range-text">От</span>
+                    <input type="text" class="range-input" name="cost-from" value="0">
+                  </label>
+                  <label class="filter-name range-name cost-to">
+                    <span class="filter-text range-text">До</span>
+                    <input type="text" class="range-input" name="cost-to" value="3000">
+                  </label>
+                </div>
                 <div class="range-controls">
-                  <div class="bar"></div>
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
                   <div class="grip min-grip"></div>
                   <div class="grip max-grip"></div>
                 </div>
+                <button type="submit" class="filter-show-btn button">Показать</button>
             </fieldset>
-            <button type="submit" class="filter-show-btn button">Показать</button>
           </form>
         </div>
       </section>
 
       <section class="sort">
-        <h2 class="visually-hidden">Сортировка жилья</h2>
-        <p class="sort-result">Найдено: 3</p>
-        <p class="sort-row">Сортировка:</p>
+        <h2 class="visually-hidden sort-text">Сортировка жилья</h2>
+        <p class="sort-result sort-text">Найдено: 3</p>
+        <p class="sort-row sort-text">Сортировка:</p>
         <ul class="sort-list">
           <li class="sort-item sort-row">
-            <a href="#" class="sort-link active">По цене</a>
+            <a href="#" class="sort-link active sort-text">По цене</a>
           </li>
           <li class="sort-item sort-row">
-            <a href="#" class="sort-link">По типу</a>
+            <a href="#" class="sort-link sort-text">По типу</a>
           </li>
           <li class="sort-item sort-row">
-            <a href="#" class="sort-link">По рейтингу</a>
+            <a href="#" class="sort-link sort-text">По рейтингу</a>
           </li>
           <li class="sort-item sort-icon">
             <a href="#" class="sort-link-step sort-ascending">Возрастание</a>
@@ -185,7 +189,7 @@
     </main>
 
   	<footer class="container main-footer">
-            <div class="footer-content">
+      <div class="footer-content">
         <a href="#" class="footer-unit hashtag">#visitsedona</a>
         <ul class="footer-unit social-list">
            <li class="footer-item"><a class="button social-link social-twitter" href="#">Twitter</a></li>
