@@ -251,9 +251,8 @@ a {
 
 .reason-less .theme-text{
   background-color: #eeeeee;
-  width: 69%;
 
-  padding: 0 32px;
+  padding: 0 35px 20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
