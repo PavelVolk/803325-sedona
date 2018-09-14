@@ -189,7 +189,7 @@ a {
   width: 100%;
   display: flex;
   list-style: none;
-  margin: 0 auto;
+  margin: 0 auto 57px;
   padding: 0;
   flex-wrap: wrap;
   flex-direction: row;
@@ -278,7 +278,7 @@ a {
 }
 
 .feature-eat .theme-text {
-  padding: 0 45px;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
@@ -290,7 +290,7 @@ a {
 .feature-home .home-image {
   margin: 0 auto 30px;
   width: 75px;
-  height: 72px;
+  height: 76px;
   background: url("../img/svg/bg/home.svg") no-repeat center center;
   background-size: contain;
 }
@@ -298,7 +298,7 @@ a {
 .feature-eat .eat-image {
   margin: 0 auto 30px;
   width: 74px;
-  height: 72px;
+  height: 76px;
   background: url("../img/svg/bg/eat.svg") no-repeat center center;
   background-size: contain;
 }
@@ -306,7 +306,7 @@ a {
 .feature-gift .gift-image {
   margin: 0 auto 30px;
   width: 64px;
-  height: 72px;
+  height: 76px;
   background: url("../img/svg/bg/gift.svg") no-repeat center center;
   background-size: contain;
 }
@@ -320,10 +320,18 @@ a {
 
 .feedback .theme-text {
   line-height: 24px;
+  margin-bottom: 52px;
 }
 
 .search {
+  width: 452px;
+  margin: 0 auto;
+
   position: relative;
+}
+
+.search-row {
+  display: flex;
 }
 
 .search-calendar {
@@ -349,7 +357,15 @@ a {
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 #00010126;
 
+  width: 100%;
+
+  padding: 55px;
+  box-sizing: border-box;
+
   position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1;
 }
 
 .search-input-wrapper .search-input {
@@ -378,9 +394,6 @@ a {
   line-height: 26px;
 
   display: block;
-  width: 452px;
-
-  margin: 0 auto;
   padding: 29px 58px;
 }
 
@@ -551,20 +564,21 @@ a {
 
   min-width: 140px;
   margin: 0;
-  margin-right: 110px;
+  margin-right: 9.5%;
   padding: 0;
   border: none;
 }
 
 .filter-range {
-  width: 330px;
+  max-width: 330px;
+  min-width: 224px;
   margin: 0;
   margin-left: auto;
 }
 
 .cost {
   position: relative;
-  height: 36px;
+  height: 34px;
   margin-bottom: 20px;
 
   border: 2px solid #ffffff;
@@ -582,7 +596,7 @@ a {
   width: 2px;
   height: 22px;
 
-  background: #fffff;
+  background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
@@ -590,8 +604,9 @@ a {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  font-weight: 400;
+  line-height: 21px;
+  vertical-align: middle;
 
   cursor: pointer;
 }
@@ -600,10 +615,6 @@ a {
 .cost .cost-to {
   width: 90px;
   padding-left: 65px;
-}
-
-.filter-text {
-  font-size: 14px;
 }
 
 .range-input {
@@ -690,7 +701,7 @@ a {
   line-height: 18px;
 
   display: flex;
-  padding: 32px 6%;
+  padding: 30px 6%;
   align-items: center;
 
   border-bottom: 1px solid #f2f2f2;
@@ -704,16 +715,20 @@ a {
   width: 100%;
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 .sort .sort-result {
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
 
-  margin-right: 50px;
+  min-width: 135px;
+
+  margin-right: 28px;
 }
 
-.sort .sort-row {
+.sort-by {
   margin-right: 40px;
 }
 
@@ -744,12 +759,13 @@ a {
 }
 
 .sort-directions {
-  position: relative;
+  display: flex;
   margin-left: auto;
 }
 
 .sort-link-step {
   font-size: 0;
+  line-height: 0;
   color: #cacaca;
 
   border: 6px solid transparent;
@@ -758,38 +774,30 @@ a {
 .sort-ascending {
   border-bottom: 10px solid #cacaca;
   border-top-width: 0;
-  position: absolute;
-  overflow: auto;
-  transform: translate(-34px, -40px);
+
 }
 
 .sort-descending {
   border-top: 10px solid #81b3d2;
   border-bottom-width: 0;
   margin-left: 12px;
-  position: absolute;
-  overflow: auto;
-  transform: translate(-24px, -5px);
+
 }
 
 .sort-descending:hover {
-  border-top: 10px solid #000000;
-  border-bottom-width: 0;
+  border-top-color: #000000;
 }
 
 .sort-ascending:hover {
-  border-bottom: 10px solid #000000;
-  border-top-width: 0;
+  border-bottom-color: #000000;
 }
 
 .sort-descending:active {
-  border-top: 10px solid #81b3d2;
-  border-bottom-width: 0;
+  border-top-color: #81b3d2;
 }
 
 .sort-ascending:active {
-  border-bottom: 10px solid #81b3d2;
-  border-top-width: 0;
+  border-bottom-color: #81b3d2;
 }
 
 .hotel {
@@ -868,6 +876,8 @@ a {
 }
 
 .hotel-rate {
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
 }
 
@@ -877,7 +887,7 @@ a {
   line-height: 21px;
 
   margin-top: auto;
-  padding: 3px 17px;
+  padding: 3px 14px;
   background-color: #f2f2f2;
 }
 
