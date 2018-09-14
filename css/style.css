@@ -18,6 +18,7 @@ a {
 
 .container {
   margin: 0 auto;
+  min-width: 768px;
   max-width: 1200px;
   background-color: #ffffff;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
@@ -96,7 +97,7 @@ a {
   box-sizing: border-box;
 }
 
-.menu-item:nth-child(4n-2) {
+.menu-item:nth-child(2) {
   margin-right: 20%;
 }
 
@@ -148,7 +149,7 @@ a {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 55px;
+  margin-bottom: 47px;
   line-height: 26px;
 }
 
@@ -171,7 +172,38 @@ a {
 }
 
 .reason-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
+}
+
+.reason-number::before {
+  content: "";
+  margin-right: 5px;
+
+  width: 8px;
+  height: 1px;
+
+  background: #333333;
+}
+
+.reason-number::after {
+  content: "";
+  margin-left: 5px;
+
+  width: 8px;
+  height: 1px;
+
+  background: #333333;
+}
+
+.reason-content .reason-number::before {
+  background: #ffffff
+}
+
+.reason-content .reason-number::after {
+  background: #ffffff
 }
 
 .footer-list,
@@ -219,7 +251,12 @@ a {
 
 .reason-less .theme-text{
   background-color: #eeeeee;
-  padding: 0 18%;
+  width: 69%;
+
+  padding: 0 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
 .reason-item:first-child {
@@ -232,13 +269,19 @@ a {
 }
 
 .reason-content {
+  min-height: 256px;
   flex-shrink: 0;
-  padding: 45px;
+  padding: 25px 40px;
   width: calc(100% / 3);
   background-color: #81b3d2;
   text-align: center;
   box-sizing: border-box;
 }
+
+.reason-content .theme-text {
+  margin-bottom: 0;
+}
+
 
 .reason-image {
   position: relative;
@@ -442,7 +485,20 @@ a {
 .map {
   background-color: #dbe5c6;
   width: 100%;
-  height: 593;
+  height: 594px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.map img {
+  height: auto;
+
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
 }
 
 .footer-content {
@@ -597,7 +653,7 @@ a {
   height: 22px;
 
   background: #ffffff;
-  transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
 }
 
 .cost .range-name {
