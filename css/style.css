@@ -1,20 +1,21 @@
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: 400;
-	color: #000000;
-	text-transform: uppercase;
-  font-kerning: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  -webkit-font-kerning: none;
+          font-kerning: none;
 
-	background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
@@ -36,7 +37,9 @@ a {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -78,7 +81,8 @@ a {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -121,15 +125,15 @@ a {
 
 .menu-link {
   font-weight: 700;
-	color: #000000;
+  color: #000000;
 }
 
 .menu-link:hover {
-	color: #81b3d2;
+  color: #81b3d2;
 
 }
 .menu-link:active {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 .menu-link:not([href]),
@@ -160,7 +164,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 27px;
-	line-height: 26px;
+  line-height: 26px;
 }
 
 .reason-header .theme-text {
@@ -243,9 +247,6 @@ a {
   padding: 0;
 }
 
-
-/*----ПРОБНЫЙ ФЛЕКС----*/
-
 .reason-list {
   width: 100%;
   display: flex;
@@ -310,7 +311,8 @@ a {
   height: auto;
   top: 50%;
   left: 0%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .feature-list {
@@ -369,8 +371,6 @@ a {
   background: url("../img/svg/bg/gift.svg") no-repeat center center;
   background-size: contain;
 }
-
-/*----КОНЕЦ ФЛЕКСА----*/
 
 .feedback .theme-title {
   font-size: 30px;
@@ -552,7 +552,8 @@ a {
 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   position: absolute;
 }
 
@@ -566,7 +567,8 @@ a {
 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   position: absolute;
 }
 
@@ -613,8 +615,6 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/*----FOOTER----*/
-
 .main-footer {
   position: relative;
 }
@@ -645,7 +645,7 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   bottom: 0;
   display: flex;
 }
@@ -685,7 +685,8 @@ a {
   height: 20px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -748,10 +749,9 @@ a {
   line-height: 26px;
   color: #000000;
   font-weight: 700;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
-
-/*-------ОТЕЛИ-------*/
 
 .filter-form {
   color: #ffffff;
@@ -884,7 +884,8 @@ a {
   height: 22px;
 
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .cost .range-name {
@@ -937,7 +938,8 @@ a {
 .grip {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 
   width: 4px;
   height: 4px;
@@ -945,13 +947,14 @@ a {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px rgba(171,171,171,0.3);
+  box-shadow: 0 2px rgba(171, 171, 171, 0.3);
   cursor: pointer;
 }
 
 .grip:hover {
   border: 9px solid #ffffff;
-  transform: translate(-1px, -50%);
+  -webkit-transform: translate(-1px, -50%);
+          transform: translate(-1px, -50%);
 }
 
 .min-grip {
@@ -1231,8 +1234,8 @@ a {
   margin-left: auto;
 
   background:
-    url(../img/svg/bg/star.svg) no-repeat 0px center,
-    url(../img/svg/bg/star.svg) no-repeat 23px center,
-    url(../img/svg/bg/star.svg) no-repeat 48px center,
-    url(../img/svg/bg/star.svg) no-repeat 71px center;
+    url("../img/svg/bg/star.svg") no-repeat 0px center,
+    url("../img/svg/bg/star.svg") no-repeat 23px center,
+    url("../img/svg/bg/star.svg") no-repeat 48px center,
+    url("../img/svg/bg/star.svg") no-repeat 71px center;
 }
