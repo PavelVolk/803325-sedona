@@ -683,9 +683,9 @@ a {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 30%;
-  left: 29%;
-  transform: translate(-29% -30%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: url("../img/svg/bg/twitter.svg") no-repeat;
   background-position: 50% 50%;
 }
@@ -699,9 +699,9 @@ a {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 30%;
-  left: 29%;
-  transform: translate(-29% -30%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: url("../img/svg/bg/facebook.svg") no-repeat;
   background-position: 50% 50%;
 }
@@ -715,9 +715,9 @@ a {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 30%;
-  left: 29%;
-  transform: translate(-29% -30%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: url("../img/svg/bg/youtube.svg") no-repeat;
   background-position: 50% 50%;
 }
@@ -971,7 +971,7 @@ a {
 
 .grip:hover {
   border: 9px solid #ffffff;
-  transform: translate(-1px -50%);
+  transform: translate(-1px, -50%);
 }
 
 .min-grip {
