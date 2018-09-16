@@ -733,7 +733,7 @@ a {
   line-height: 21px;
 
   display: flex;
-  padding: 27px 6%;
+  padding: 27px 6% 7px;
 
   background-image: url("../img/bg/filter-bg.jpg");
   background-color: #637b90;
@@ -743,12 +743,75 @@ a {
 
 .filter-col {
   font-size: 16px;
+  font-weight: 700;
 
   min-width: 140px;
   margin: 0;
-  margin-right: 9.5%;
+  margin-right: 11%;
   padding: 0;
   border: none;
+}
+
+.filter-title {
+  margin-bottom: 24px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-bottom: 23px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.filter-check:checked + .checkbox-text::before {
+  content: "";
+  width: 27px;
+  height: 23px;
+
+  margin-right: 12px;
+
+  background: url("../img/svg/bg/checkbox-on.svg") no-repeat ;
+}
+
+.filter-check:not(:checked) + .checkbox-text::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+
+  margin-right: 16px;
+
+  background: url("../img/svg/bg/checkbox-off.svg") no-repeat ;
+}
+
+.filter-check:not(:checked):disabled + .checkbox-text::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+
+  margin-right: 16px;
+
+  background: url("../img/svg/bg/checkbox-off-disabled.svg") no-repeat ;
+}
+
+.filter-check:checked:disabled + .checkbox-text::before {
+  content: "";
+  width: 27px;
+  height: 23px;
+
+  margin-right: 12px;
+
+  background: url("../img/svg/bg/checkbox-on-disabled.svg") no-repeat ;
 }
 
 .filter-range {
@@ -1008,7 +1071,7 @@ a {
 
 .hotel-title {
   margin-top: -5px;
-  margin-bottom: 0;
+  margin-bottom: 6px;
   font-size: 21px;
   line-height: 26px;
   text-align: left;
@@ -1086,4 +1149,50 @@ a {
 
 .hotel-stars {
   font-size: 0;
+}
+
+.hotel-stars-one {
+  height: 16px;
+  width: 18px;
+
+  margin-left: auto;
+
+  background:
+    url("../img/svg/bg/star.svg") no-repeat
+}
+
+.hotel-stars-two {
+  height: 16px;
+  width: 40px;
+
+  margin-left: auto;
+
+  background:
+    url("../img/svg/bg/star.svg") no-repeat 0px center,
+    url("../img/svg/bg/star.svg") no-repeat 23px center;
+}
+
+.hotel-stars-three {
+  height: 16px;
+  width: 64px;
+
+  margin-left: auto;
+
+  background:
+    url("../img/svg/bg/star.svg") no-repeat 0px center,
+    url("../img/svg/bg/star.svg") no-repeat 23px center,
+    url("../img/svg/bg/star.svg") no-repeat 47px center;
+}
+
+.hotel-stars-four {
+  height: 16px;
+  width: 89px;
+
+  margin-left: auto;
+
+  background:
+    url(../img/svg/bg/star.svg) no-repeat 0px center,
+    url(../img/svg/bg/star.svg) no-repeat 23px center,
+    url(../img/svg/bg/star.svg) no-repeat 48px center,
+    url(../img/svg/bg/star.svg) no-repeat 71px center;
 }
