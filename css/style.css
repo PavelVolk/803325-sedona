@@ -8,6 +8,7 @@ body {
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
+  font-kerning: none;
 
 	background-color: #f2f2f2;
 }
@@ -179,7 +180,7 @@ a {
 .reason-content {
   min-height: 256px;
   flex-shrink: 0;
-  padding: 25px 40px;
+  padding: 25px 40px 20px;
   width: calc(100% / 3);
   background-color: #81b3d2;
   text-align: center;
@@ -272,6 +273,7 @@ a {
 .reason-less {
   min-height: 256px;
   padding-top: 26px;
+  padding-bottom: 20px;
   background-color: #eeeeee;
 
   box-sizing: border-box;
@@ -280,7 +282,7 @@ a {
 .reason-less .theme-text{
   background-color: #eeeeee;
 
-  padding: 0 35px 20px;
+  padding: 0 35px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
@@ -323,22 +325,24 @@ a {
 .feature-item {
   width: calc(100%/3);
   min-height: 330px;
+
   padding-top: 58px;
+  padding-bottom: 20px;
   box-sizing: border-box;
 }
 
 .feature-home .theme-text {
-  padding: 2px 17% 20px;
+  padding: 2px 17%;
   margin: 0 auto;
 }
 
 .feature-eat .theme-text {
-  padding: 2px 50px 20px;
+  padding: 2px 50px;
   margin: 0 auto;
 }
 
 .feature-gift .theme-text {
-  padding: 2px 14% 20px;
+  padding: 2px 14%;
   margin: 0 auto;
 }
 
@@ -530,6 +534,8 @@ a {
   padding: 0;
 
   outline: none;
+  cursor: pointer;
+
   border: none;
   background-color: transparent;
 
@@ -544,7 +550,9 @@ a {
 
   background-color: #cacaca;
 
-  left: 13px;
+  top: 50%;
+  left: : 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
 }
 
@@ -556,8 +564,9 @@ a {
 
   background-color: #cacaca;
 
-  top: 14px;
-  right: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
 }
 
@@ -587,6 +596,8 @@ a {
 .search-send {
   font-size: 21px;
   line-height: 26px;
+
+  cursor: pointer;
 
   width: 100%;
   padding: 16px 0;
@@ -663,21 +674,56 @@ a {
   height: 48px;
   width: 46px;
   background-color: #81b3d2;
+
+  position: relative;
 }
 
-.social-twitter {
+.social-twitter::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30%;
+  left: 29%;
+  transform: translate(-29% -30%);
   background: url("../img/svg/bg/twitter.svg") no-repeat;
   background-position: 50% 50%;
 }
 
-.social-facebook {
+.social-twitter:active::before {
+  opacity: 0.3;
+}
+
+.social-facebook::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30%;
+  left: 29%;
+  transform: translate(-29% -30%);
   background: url("../img/svg/bg/facebook.svg") no-repeat;
   background-position: 50% 50%;
 }
 
-.social-youtube {
+.social-facebook:active::before {
+  opacity: 0.3;
+}
+
+.social-youtube::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30%;
+  left: 29%;
+  transform: translate(-29% -30%);
   background: url("../img/svg/bg/youtube.svg") no-repeat;
   background-position: 50% 50%;
+}
+
+.social-youtube:active::before {
+  opacity: 0.3;
 }
 
 .main-footer .button {
@@ -691,7 +737,6 @@ a {
 }
 
 .main-footer .button:active {
-  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -920,12 +965,13 @@ a {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px rgba(171,171,171,0.3);
   cursor: pointer;
 }
 
 .grip:hover {
-  border: 10px solid #ffffff;
+  border: 9px solid #ffffff;
+  transform: translate(-1px -50%);
 }
 
 .min-grip {
@@ -965,7 +1011,7 @@ a {
   line-height: 18px;
 
   display: flex;
-  padding: 30px 6%;
+  padding: 30px 6% 26px;
   align-items: center;
 
   border-bottom: 1px solid #f2f2f2;
@@ -977,6 +1023,7 @@ a {
 
 .sort-list {
   width: 100%;
+
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -989,7 +1036,7 @@ a {
 
   min-width: 135px;
 
-  margin-right: 28px;
+  margin-right: 29px;
 }
 
 .sort-by {
@@ -1001,6 +1048,7 @@ a {
 }
 
 .sort-link {
+  line-height: 30px;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: dotted 1px #81b3d2;
 }
@@ -1114,7 +1162,7 @@ a {
 }
 
 .hotel-booking-btn {
-  padding: 3px 17px;
+  padding: 3px 16px;
   margin-top: auto;
 }
 
@@ -1128,7 +1176,7 @@ a {
 }
 
 .hotel-details-btn {
-  padding: 3px 17px;
+  padding: 3px 16px;
   margin-top: auto;
 
   background-color: #81b3d2;
