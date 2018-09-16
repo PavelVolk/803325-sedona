@@ -181,7 +181,7 @@ a {
   min-height: 256px;
   flex-shrink: 0;
   padding: 25px 40px 20px;
-  width: calc(100% / 3);
+  width: 33.3333%;
   background-color: #81b3d2;
   text-align: center;
   box-sizing: border-box;
@@ -258,7 +258,7 @@ a {
 }
 
 .reason-item {
-  width: calc(100% / 3);
+  width: 33.3333%;
 }
 
 .reason-extended {
@@ -323,7 +323,7 @@ a {
 }
 
 .feature-item {
-  width: calc(100%/3);
+  width: 33.3333%;
   min-height: 330px;
 
   padding-top: 58px;
@@ -657,7 +657,7 @@ a {
 .footer-unit {
   display: flex;
   justify-content: center;
-  width: calc(100%/3);
+  width: 33.3333%;
 }
 
 .social-list {
