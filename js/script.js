@@ -1,18 +1,19 @@
 
-      var link = document.querySelector(".search-link");
+      var search = document.querySelector(".search");
 
-      var popup = document.querySelector(".search-wrapper");
-      var form = document.querySelector(".search-form")
+      var button = search.querySelector(".search-button");
+      var popup = search.querySelector(".search-wrapper");
+      var form = search.querySelector(".search-form");
 
-      var arrival = document.querySelector("#arrival")
-      var leaving = document.querySelector("#leaving")
+      var arrival = form.querySelector("#arrival");
+      var leaving = form.querySelector("#leaving");
 
-      link.addEventListener("click", function (evt) {
+      button.addEventListener("click", function (evt) {
         evt.preventDefault();
         form.classList.toggle("search-form-show");
-        popup.classList.toggle("search-wrapper-show")
+        popup.classList.toggle("search-wrapper-show");
         if (popup.classList.contains("search-form-error")) {
-          popup.classList.remove("search-form-error")
+          popup.classList.remove("search-form-error");
         }
       });
 

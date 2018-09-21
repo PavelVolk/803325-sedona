@@ -482,7 +482,7 @@ a {
           animation: shake 0.6s;
 }
 
-.search-link {
+.search-button {
   font-size: 21px;
   line-height: 26px;
 
@@ -490,11 +490,11 @@ a {
   padding: 30px 58px;
 }
 
-.search-link:hover {
+.search-button:hover {
   background-color: #604e43;
 }
 
-.search-link:active {
+.search-button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3)
 }
