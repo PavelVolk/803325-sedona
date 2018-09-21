@@ -251,7 +251,7 @@ a {
   width: 100%;
   display: flex;
   list-style: none;
-  margin: 0 auto 50px;
+  margin: 0;
   padding: 0;
   flex-wrap: wrap;
   flex-direction: row;
@@ -372,6 +372,12 @@ a {
   background-size: contain;
 }
 
+.feedback {
+  padding-top: 20px;
+
+  background: #ffffff;
+}
+
 .feedback .theme-title {
   font-size: 30px;
   line-height: 36px;
@@ -383,10 +389,48 @@ a {
   margin: 0 auto 47px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -100%);
+  }
+
+  100% {
+    transform: translate(-50%, 0%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .search {
-  width: 568px;
   margin: 0 auto;
 
+  position: relative;
+}
+
+.search-wrapper {
+  width: 568px;
+
+  overflow: hidden;
   position: relative;
 }
 
@@ -401,10 +445,23 @@ a {
   padding: 55px;
   box-sizing: border-box;
 
-  position: absolute;
-  left: 0;
-  top: 100%;
-  z-index: 1;
+  position: relative;
+  left: 50%;
+  top: 0;
+
+  transform: translateX(-50%);
+
+  display: none;
+}
+
+.search-form-show {
+  display: block;
+
+  animation: bounce 0.8s;
+}
+
+.search-form-error {
+  animation: shake 0.6s;
 }
 
 .search-link {
@@ -413,6 +470,9 @@ a {
 
   display: block;
   padding: 30px 58px;
+  max-width: 568px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .search-link:hover {
