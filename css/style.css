@@ -251,7 +251,7 @@ a {
   width: 100%;
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0 auto 50px;
   padding: 0;
   flex-wrap: wrap;
   flex-direction: row;
@@ -372,12 +372,6 @@ a {
   background-size: contain;
 }
 
-.feedback {
-  padding-top: 20px;
-
-  background: #ffffff;
-}
-
 .feedback .theme-title {
   font-size: 30px;
   line-height: 36px;
@@ -389,67 +383,58 @@ a {
   margin: 0 auto 47px;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translate(-50%, -100%);
-  }
-
-  100% {
-    transform: translate(-50%, 0%);
+@keyframes slide {
+  from {
+    transform: translateY(-100%);
   }
 }
 
 @keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
   10%,
   30%,
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translateX(10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translateX(-10px);
   }
 }
 
 .search {
+  width: 568px;
   margin: 0 auto;
 
   position: relative;
 }
 
 .search-wrapper {
-  width: 568px;
+  width: 100%;
 
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  left: -10px;
+  top: 100%;
+  z-index: 1;
+
+  padding: 0 10px 15px;
 }
 
 .search-form {
   font-weight: 700;
 
   background-color: #ffffff;
-  box-shadow: 0px 7px 15px 0 #00010126;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 
   width: 100%;
 
   padding: 55px;
   box-sizing: border-box;
-
-  position: relative;
-  left: 50%;
-  top: 0;
-
-  transform: translateX(-50%);
 
   display: none;
 }
@@ -457,7 +442,7 @@ a {
 .search-form-show {
   display: block;
 
-  animation: bounce 0.8s;
+  animation: slide 0.8s;
 }
 
 .search-form-error {
@@ -470,9 +455,6 @@ a {
 
   display: block;
   padding: 30px 58px;
-  max-width: 568px;
-  margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .search-link:hover {
