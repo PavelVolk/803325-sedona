@@ -32,5 +32,8 @@ window.addEventListener("keydown", function (evt) {
       popup.classList.remove("search-wrapper-show");
       form.classList.remove("search-form-show");
     }
+    if (popup.classList.contains("search-form-error")) {
+      popup.classList.remove("search-form-error");
+    }
   }
 });
