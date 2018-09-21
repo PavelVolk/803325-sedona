@@ -1,3 +1,4 @@
+document.body.classList.remove("no-js");
 var search = document.querySelector(".search");
 
 var button = search.querySelector(".search-button");

@@ -472,6 +472,10 @@ a {
   box-sizing: border-box;
 }
 
+.no-js .search-wrapper {
+  display: block;
+}
+
 .search-form-show {
   -webkit-animation: slide 0.8s;
           animation: slide 0.8s;
@@ -482,11 +486,14 @@ a {
           animation: shake 0.6s;
 }
 
-.search-button {
+.search .search-button {
   font-size: 21px;
   line-height: 26px;
 
+  width: 568px;
+
   display: block;
+  box-sizing: border-box;
   padding: 30px 58px;
 }
 
