@@ -14,7 +14,6 @@
         if (popup.classList.contains("search-form-error")) {
           popup.classList.remove("search-form-error")
         }
-
       });
 
       form.addEventListener("submit", function(evt) {
