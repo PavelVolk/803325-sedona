@@ -29,12 +29,12 @@ form.addEventListener("submit", function(evt) {
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("search-form-show")) {
+    if (popup.classList.contains("search-wrapper-show")) {
       popup.classList.remove("search-wrapper-show");
       form.classList.remove("search-form-show");
-    }
-    if (popup.classList.contains("search-form-error")) {
-      popup.classList.remove("search-form-error");
+      if (popup.classList.contains("search-form-error")) {
+        popup.classList.remove("search-form-error");
+      }
     }
   }
 });
